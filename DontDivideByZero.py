@@ -1,0 +1,3 @@
+
+class DontDivideByZero(Exception):
+    pass
