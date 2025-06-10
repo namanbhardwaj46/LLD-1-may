@@ -10,10 +10,11 @@ class Parent:
 
 
 class Child(Parent):
-    def __init__(self):
+    def __init__(self, eyes=None):
         super().__init__()
         print("Child Constructor")
         self.age = 10
+        # self.eyes = eyes
 
     def speak(self):
         print("Child Speak")
@@ -22,6 +23,7 @@ class Child(Parent):
 # c = Child()
 # print(c.eyes)
 # c.speak()
+# print(c.age)
 
 
 # Multiple inheritance
@@ -30,7 +32,7 @@ class Child(Parent):
 class Parent1:
     def __init__(self):
         print("Parent1 Constructor")
-        super().__init__()
+        # super().__init__()
         self.eyes = 2
 
     def func1(self):
@@ -59,11 +61,13 @@ class Child(Parent1, Parent2):
         print("Child Constructor")
 
 
-c = Child()
+# c = Child()
+# c.func2()
+# Parent2.func2(c)
 
+# print(Child.mro())
+# print(Child.__mro__)
 
-print(Child.mro())
-Parent2.func2(c)
 
 # Hirarchy
 
@@ -90,12 +94,12 @@ class child2(parent):
         print("Child2 Constructor")
 
 
-c = child1()
-c.p1()
-c.func1_child1()
-
-c2 = child2()
-c2.p1()
+# c = child1()
+# c.p1()
+# c.func1_child1()
+#
+# c2 = child2()
+# c2.p1()
 # c2.func1_child1()
 
 # TODO: HW:  hydbird... multilevel...
