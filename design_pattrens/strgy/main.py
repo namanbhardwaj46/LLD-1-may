@@ -5,3 +5,6 @@ from design_pattrens.strgy.strgies.DebitCardPayment import DebitCardPayment
 if __name__ == "__main__":
     choice = input("Enter the type of Payment choice CC/DC: ").strip().upper()
     PaymentFactory.create_payment(choice).pay(1000)
+
+
+    # TODO: create a sorting strrgy and use it in main class
