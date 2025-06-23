@@ -9,3 +9,4 @@ class Game:
         self.current_player_index = 0
         self.winner = None
         self.game_status = GameStatus.IN_PROGRESS
+        self.moves = []

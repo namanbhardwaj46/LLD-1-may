@@ -14,4 +14,4 @@ class Cell:
         if self.status == CellStatus.EMPTY:
             print("| |", end="")
         else:
-            print(f"|{self.player.symbol}|", end="")
+            print(f"|{self.player.symbol.symbol}|", end="")
