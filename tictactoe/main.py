@@ -26,6 +26,7 @@ if __name__ == "__main__":
         gc.display_game(game)
         cell = gc.take_input(game)
         if game.game_status == GameStatus.IN_PROGRESS:
+            gc.display_game(game)
             undoQues = input("Do you want to undo the last move? 1/0: ")
             if undoQues == "1":
                 gc.undo_input(game)
